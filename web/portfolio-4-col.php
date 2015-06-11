@@ -1,3 +1,30 @@
+<?php
+
+require_once 'bootstrap.php';
+
+$portfolio = [
+    [  'container_class' =>'col-md-3 img-portfolio',
+        'img_class' => 'img-responsive img-hover',
+        'portfolio_link' => 'portfolio_item.html',
+        'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
+    ],
+    [  'container_class' =>'col-md-3 img-portfolio',
+        'img_class' => 'img-responsive img-hover',
+        'portfolio_link' => 'portfolio_item.html',
+        'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
+    ],
+    [  'container_class' =>'col-md-3 img-portfolio',
+        'img_class' => 'img-responsive img-hover',
+        'portfolio_link' => 'portfolio_item.html',
+        'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
+    ],
+    [  'container_class' =>'col-md-3 img-portfolio',
+        'img_class' => 'img-responsive img-hover',
+        'portfolio_link' => 'portfolio_item.html',
+        'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
+    ],
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +36,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title><?= $website_settings['title']; ?></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -138,31 +165,10 @@
     <!-- Projects Row -->
 
 
+
     <?php
 
-        $portfolio = [
-            [  'container_class' =>'col-md-3 img-portfolio',
-    'img_class' => 'img-responsive img-hover',
-    'portfolio_link' => 'portfolio_item.html',
-    'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
-    ],
-    [  'container_class' =>'col-md-3 img-portfolio',
-    'img_class' => 'img-responsive img-hover',
-    'portfolio_link' => 'portfolio_item.html',
-    'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
-    ],
-    [  'container_class' =>'col-md-3 img-portfolio',
-    'img_class' => 'img-responsive img-hover',
-    'portfolio_link' => 'portfolio_item.html',
-    'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
-    ],
-    [  'container_class' =>'col-md-3 img-portfolio',
-    'img_class' => 'img-responsive img-hover',
-    'portfolio_link' => 'portfolio_item.html',
-    'img_link' =>'http://pressandupdate.com/wp-content/uploads/2015/05/iPhone-Bug-Crash-750x450.jpg',
-    ],
-    ];
-
+    for ($i = 0; $i < 5; $i++)
     foreach ($portfolio as $portfolio_item ) {
     ?>
 
@@ -177,55 +183,6 @@
 
     <!-- /.row -->
 
-    <!-- Projects Row -->
-    <div class="row">
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Projects Row -->
-    <div class="row">
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 img-portfolio">
-            <a href="portfolio-item.html">
-                <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-            </a>
-        </div>
-    </div>
-    <!-- /.row -->
 
     <hr>
 
@@ -265,7 +222,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2015</p>
+                <p><?= $website_settings['copright'], date('Y'); ?></p>
             </div>
         </div>
     </footer>

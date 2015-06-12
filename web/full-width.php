@@ -48,13 +48,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active">
-                    <a href="about.html">About</a>
+                    <a href="about.php">About</a>
                 </li>
                 <li>
                     <a href="services.html">Services</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
@@ -80,13 +80,13 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="blog-home-1.html">Blog Home 1</a>
+                            <a href="blog-home-1.php">Blog Home 1</a>
                         </li>
                         <li>
-                            <a href="blog-home-2.html">Blog Home 2</a>
+                            <a href="blog-home-2.php">Blog Home 2</a>
                         </li>
                         <li>
-                            <a href="blog-post.html">Blog Post</a>
+                            <a href="blog-post.php">Blog Post</a>
                         </li>
                     </ul>
                 </li>
@@ -94,16 +94,16 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="full-width.html">Full Width Page</a>
+                            <a href="full-width.php">Full Width Page</a>
                         </li>
                         <li>
                             <a href="sidebar.html">Sidebar Page</a>
                         </li>
                         <li>
-                            <a href="faq.html">FAQ</a>
+                            <a href="faq.php">FAQ</a>
                         </li>
                         <li>
-                            <a href="404.html">404</a>
+                            <a href="404.php">404</a>
                         </li>
                         <li>
                             <a href="pricing.html">Pricing Table</a>

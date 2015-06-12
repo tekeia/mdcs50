@@ -80,13 +80,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
+                                <a href="blog-home-1.php">Blog Home 1</a>
                             </li>
                             <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
+                                <a href="blog-home-2.php">Blog Home 2</a>
                             </li>
                             <li class="active">
-                                <a href="blog-post.html">Blog Post</a>
+                                <a href="blog-post.php">Blog Post</a>
                             </li>
                         </ul>
                     </li>

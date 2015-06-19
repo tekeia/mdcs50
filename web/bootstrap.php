@@ -3,11 +3,11 @@
 require_once 'functions.php';
 
 $website_settings = [
-	'title' => 'Pirate Islands, LLC',
-	'home' => 'Pirate Life',
-	'page_title' => 'Ship wreak',
+	'title' => '@tekeia',
+	'home' => '@tekeia',
+	'page_title' => 'tekeia',
 	'page_description' => 'List of all my ship wreaks',
-	'copyright' => 'Copyright &copy; Pirate Islands %s',
+	'copyright' => 'Copyright &copy; @tekeia %s',
 ];
 
 $portfolio_collection = [

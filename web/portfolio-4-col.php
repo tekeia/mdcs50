@@ -1,5 +1,7 @@
 <?php require_once 'bootstrap.php'; ?>
 <?php require_once 'header.php'; ?>
+<?php require_once 'navigation.php'; ?>
+
 	<!-- Page Content -->
 	<div class="container">
         <!-- Page Heading/Breadcrumbs -->

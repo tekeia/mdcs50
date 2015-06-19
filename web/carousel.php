@@ -1,11 +1,12 @@
 <?php require_once 'bootstrap.php'; ?>
+<?php require_once 'functions.php'; ?>
 <?php $carousel = getCarousel(getCurrentPage()); ?>
 <!-- Header Carousel -->
 <header id="myCarousel" class="carousel slide">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
-		<?php $carousel_length = count($carousel) - 1;  ?>
-		<?php for ($index = $carousel_length ; $index >= 0; $index--) : ?>
+		<?php $carousel_length = count($carousel);  ?>
+		<?php for ($index = $carousel_length; $index >= 0; $index - 1) : ?>
 			<li data-target="#myCarousel" data-slide-to="<?= $index; ?>" <?= ($index == $carousel_length) ? 'class="active"' : ''; ?>></li>
 		<?php endfor; ?>
 	</ol>
